@@ -1,0 +1,130 @@
+SEQUENCE {
+  SEQUENCE {
+    [0] {
+      INTEGER { 2 }
+    }
+    INTEGER { 1 }
+    SEQUENCE {
+      # ecdsa-with-SHA384
+      OBJECT_IDENTIFIER { 1.2.840.10045.4.3.3 }
+    }
+    SEQUENCE {
+      SET {
+        SEQUENCE {
+          # commonName
+          OBJECT_IDENTIFIER { 2.5.4.3 }
+          UTF8String { "Wizarding Certificate Authority" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # organizationName
+          OBJECT_IDENTIFIER { 2.5.4.10 }
+          UTF8String { "Gringotts Wizarding Bank" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # localityName
+          OBJECT_IDENTIFIER { 2.5.4.7 }
+          UTF8String { "London" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # stateOrProvinceName
+          OBJECT_IDENTIFIER { 2.5.4.8 }
+          UTF8String { "Greater London" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # countryName
+          OBJECT_IDENTIFIER { 2.5.4.6 }
+          PrintableString { "GB" }
+        }
+      }
+    }
+    SEQUENCE {
+      UTCTime { "150101120000Z" }
+      UTCTime { "300101120000Z" }
+    }
+    SEQUENCE {
+      SET {
+        SEQUENCE {
+          # commonName
+          OBJECT_IDENTIFIER { 2.5.4.3 }
+          UTF8String { "Wizarding Certificate Authority" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # stateOrProvinceName
+          OBJECT_IDENTIFIER { 2.5.4.8 }
+          UTF8String { "Diagon Alley" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # countryName
+          OBJECT_IDENTIFIER { 2.5.4.6 }
+          PrintableString { "England" }
+        }
+      }
+      SET {
+        SEQUENCE {
+          # organizationName
+          OBJECT_IDENTIFIER { 2.5.4.10 }
+          UTF8String { "Gringotts Wizarding Bank" }
+        }
+      }
+    }
+    SEQUENCE {
+      SEQUENCE {
+        # ecPublicKey
+        OBJECT_IDENTIFIER { 1.2.840.10045.2.1 }
+        SEQUENCE {
+          INTEGER { 1 }
+          SEQUENCE {
+            # prime-field
+            OBJECT_IDENTIFIER { 1.2.840.10045.1.1 }
+            INTEGER { `00fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeffffffff0000000000000000ffffffff` }
+          }
+          SEQUENCE {
+            OCTET_STRING { `fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeffffffff0000000000000000fffffffc` }
+            OCTET_STRING { `b3312fa7e23ee7e4988e056be3f82d19181d9c6efe8141120314088f5013875ac656398d8a2ed19d2a85c8edd3ec2aef` }
+            BIT_STRING { `00` `a335926aa319a27a1d00896a6773a4827acdac73` }
+          }
+          OCTET_STRING { `04bb3de13398a18e1c0d1a2d77ae8cbb9ea358d8c5c075eac51e0c408a0367db2ba187f1ab2febd8859d4c12811563fae6056fef803bff43964ca15c63a28cdc1fdfd38dab9fac20e7a8fa1fae619e576ee5706423414a3c3f8c7e1a2d8adc9cd7` }
+          INTEGER { `00ffffffffffffffffffffffffffffffffffffffffffffffffc7634d81f4372ddf581a0db248b0a77aecec196accc52973` }
+          INTEGER { 1 }
+        }
+      }
+      BIT_STRING { `00` `0434ddf9d700abe1262a5f9a368bb0bcc9c00573ccd5d621cbf657fccfb58bbde634af20b13d49aac5675582e1ed30dd6bed45cb7c2da1acae971f3f7660517facca8bffa59b41e5d34af225d501dbfdfb6c4ec996a3ddf753342b771e3156c2bf` }
+    }
+    [3] {
+      SEQUENCE {
+        SEQUENCE {
+          # basicConstraints
+          OBJECT_IDENTIFIER { 2.5.29.19 }
+          OCTET_STRING {
+            SEQUENCE {
+              BOOLEAN { TRUE }
+            }
+          }
+        }
+      }
+    }
+  }
+  SEQUENCE {
+    # ecdsa-with-SHA384
+    OBJECT_IDENTIFIER { 1.2.840.10045.4.3.3 }
+  }
+  BIT_STRING {
+    `00`
+    SEQUENCE {
+      INTEGER { `%096x` }
+      INTEGER { `%096x` }
+    }
+  }
+}

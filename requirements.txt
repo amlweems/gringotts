@@ -1,0 +1,2 @@
+fastecdsa>=1.7.4
+gmpy2>=2.0.8

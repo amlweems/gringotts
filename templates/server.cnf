@@ -1,0 +1,17 @@
+[ req ]
+default_bits = 2048
+default_md = sha256
+prompt = no
+req_extensions = req_ext
+distinguished_name = dn
+
+[ dn ]
+C  = GB
+ST = Scotland
+L  = Highlands
+OU = Hogwarts Castle
+O  = Gringotts
+CN = hogwarts.lf.lc
+
+[ req_ext ]
+subjectAltName = DNS:hogwarts.lf.lc

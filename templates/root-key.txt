@@ -1,0 +1,25 @@
+SEQUENCE {
+  INTEGER { 1 }
+  OCTET_STRING { `%096x` }
+  [0] {
+    SEQUENCE {
+      INTEGER { 1 }
+      SEQUENCE {
+        # prime-field
+        OBJECT_IDENTIFIER { 1.2.840.10045.1.1 }
+        INTEGER { `00fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeffffffff0000000000000000ffffffff` }
+      }
+      SEQUENCE {
+        OCTET_STRING { `fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeffffffff0000000000000000fffffffc` }
+        OCTET_STRING { `b3312fa7e23ee7e4988e056be3f82d19181d9c6efe8141120314088f5013875ac656398d8a2ed19d2a85c8edd3ec2aef` }
+        BIT_STRING { `00` `a335926aa319a27a1d00896a6773a4827acdac73` }
+      }
+      OCTET_STRING { `04%096x%096x` }
+      INTEGER { `00ffffffffffffffffffffffffffffffffffffffffffffffffc7634d81f4372ddf581a0db248b0a77aecec196accc52973` }
+      INTEGER { 1 }
+    }
+  }
+  [1] {
+    BIT_STRING { `00` `04%096x%096x` }
+  }
+}
